@@ -14,23 +14,17 @@ Each object is a dictionary describing the user's action and additional informat
 User interaction is primarily recorded in "command-pre" events which are written when the user initiates certain actions (equivalently "command-post" events, which seem to be identical, but output when the command completes).
 
 #### Navigating
-* `logs/` class data repository
-  * `assignment${i}/` for `i` in `1 2 3`
-    * `participants.txt` prefixes for files in directories
-    * `registre-logs/` processed Tableau logs from exploration
-    * `tableau-logs/` raw Tableau logs from exploration
-    * `transcripts/` participant-recorded exploration steps
+
+* `datasets/` data given to participants to explore in pilot study
+* `info/` data about the logs
 * `registre/` main Python modules
   * `actions.py` parse Tableau log "command-pre" event parameters 
   * `graph.py` plot registre logs as Markov diagrams
   * `map.py` parse Tableau log files and output registre log files
   * `read.py` read registre log files
   * `tableaukeys.py` list of Tableau event keys that are not of interest
-* `out/` byproducts from analyzing the raw data
-  * `figs/` graphs and lists
-  * `info/` data about the raw data
-  * `notebooks/` IPython analysis code
 * `scripts/` scripts running registre code -- good source of examples on how to use it
+* `test/` the start of a set of tests for testing the registre module
 
 #### Dependencies
 
