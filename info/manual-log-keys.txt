@@ -1,0 +1,11 @@
+import-data
+new-sheet
+focus-sheet
+map-variable
+unmap-variable
+aggregate-mapped-variable
+split-axis
+filter-plot
+relabel-variable
+create-hierarchy
+expand-hierarchy

@@ -1,0 +1,257 @@
+{
+    "columns": {
+        "Browne": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 57,
+                "max": 1230,
+                "min": 4
+            },
+            "name": "Browne",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "Buchanan": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 61,
+                "max": 3411,
+                "min": 9
+            },
+            "name": "Buchanan",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "Bush": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 67,
+                "max": 289533,
+                "min": 1317
+            },
+            "name": "Bush",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "Chote": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 6,
+                "max": 16,
+                "min": 0
+            },
+            "name": "Chote",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "Gore": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 67,
+                "max": 387703,
+                "min": 789
+            },
+            "name": "Gore",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "Hagelin": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 36,
+                "max": 442,
+                "min": 0
+            },
+            "name": "Hagelin",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "Harris": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 22,
+                "max": 87,
+                "min": 0
+            },
+            "name": "Harris",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "McCarthy": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 3,
+                "max": 3,
+                "min": 0
+            },
+            "name": "McCarthy",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "McReynolds": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 18,
+                "max": 302,
+                "min": 0
+            },
+            "name": "McReynolds",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "Moorehead": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 41,
+                "max": 170,
+                "min": 0
+            },
+            "name": "Moorehead",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "Nader": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 66,
+                "max": 10022,
+                "min": 19
+            },
+            "name": "Nader",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "Phillips": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 31,
+                "max": 190,
+                "min": 0
+            },
+            "name": "Phillips",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "columns": {
+            "datatype": "int",
+            "domain": [
+                1,
+                2
+            ],
+            "name": "columns",
+            "scale": "nominal",
+            "semantictype": "binary"
+        },
+        "county": {
+            "datatype": "str",
+            "domain": [
+                "Alachua",
+                "Baker",
+                "Bay",
+                "Bradford",
+                "Brevard",
+                "Broward",
+                "Calhoun",
+                "Charlotte",
+                "Citrus",
+                "Clay",
+                "Collier",
+                "Columbia",
+                "DeSoto",
+                "Dixie",
+                "Duval",
+                "Escambia",
+                "Flagler",
+                "Franklin",
+                "Gadsden",
+                "Gilchrist",
+                "Glades",
+                "Gulf",
+                "Hamilton",
+                "Hardee",
+                "Hendry",
+                "Hernando",
+                "Highlands",
+                "Hillsborough",
+                "Holmes",
+                "IndianRiver",
+                "Jackson",
+                "Jefferson",
+                "Lafayette",
+                "Lake",
+                "Lee",
+                "Leon",
+                "Levy",
+                "Liberty",
+                "Madison",
+                "Manatee",
+                "Marion",
+                "Martin",
+                "MiamiDade",
+                "Monroe",
+                "Nassau",
+                "Okaloosa",
+                "Okeechobee",
+                "Orange",
+                "Osceola",
+                "PalmBeach",
+                "Pasco",
+                "Pinellas",
+                "Polk",
+                "Putnam",
+                "SantaRosa",
+                "Sarasota",
+                "Seminole",
+                "StJohns",
+                "StLucie",
+                "Sumter",
+                "Suwannee",
+                "Taylor",
+                "Union",
+                "Volusia",
+                "Wakulla",
+                "Walton",
+                "Washington"
+            ],
+            "name": "county",
+            "scale": "nominal",
+            "semantictype": "county"
+        },
+        "over": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 65,
+                "max": 21855,
+                "min": 0
+            },
+            "name": "over",
+            "scale": "quantitative",
+            "semantictype": "count"
+        },
+        "technology": {
+            "datatype": "str",
+            "domain": [
+                "Datavote",
+                "Hand",
+                "Lever",
+                "Optical",
+                "Votomatic"
+            ],
+            "name": "technology",
+            "scale": "nominal",
+            "semantictype": "label"
+        },
+        "under": {
+            "datatype": "int",
+            "domain": {
+                "cardinality": 60,
+                "max": 10570,
+                "min": 17
+            },
+            "name": "under",
+            "scale": "quantitative",
+            "semantictype": "count"
+        }
+    },
+    "name": "datasets/fl-ballot-2000/fl-ballot-2000"
+}

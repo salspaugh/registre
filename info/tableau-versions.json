@@ -1,0 +1,14 @@
+[
+{"participant":"xavier",  "tableau-version":"8100.14.0213.2024,x64", "os":"Microsoft Windows 8 Professional (build 9200)"},
+{"participant":"renu",     "tableau-version":"8200.14.0819.2015,x64", "os":"Microsoft Windows 7 Professional Service Pack 1 (build 7601)"},
+{"participant":"hassan",   "tableau-version":"8200.14.0819.2015,x64", "os":"Microsoft Windows 8 Home Edition (build 9200)"},
+{"participant":"ian",      "tableau-version":"8200.14.0616.0146",     "os":"Mac OS X 10.9.4"},
+{"participant":"shaun",    "tableau-version":"8200.14.0616.0146",     "os":"Mac OS X 10.9.4"},
+{"participant":"shubham",  "tableau-version":"8200.14.0616.0146",     "os":"Mac OS X 10.9.4"},
+{"participant":"jenny",    "tableau-version":"8200.14.0819.2015",     "os":"Mac OS X 10.9.2"},
+{"participant":"sara",     "tableau-version":"8200.14.0819.2015",     "os":"Mac OS X 10.9.4"},
+{"participant":"sophia",   "tableau-version":"8200.14.0819.2015",     "os":"Mac OS X 10.9.4"},
+{"participant":"taek",     "tableau-version":"8200.14.0819.2015",     "os":"Mac OS X 10.9.4"},
+{"participant":"cameron-1","tableau-version":"8200.14.0819.2015",     "os":"Mac OS X 10.9.4"},
+{"participant":"cameron-2","tableau-version":"8200.14.0819.2015",     "os":"Mac OS X 10.9.4"}
+]

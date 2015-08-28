@@ -1,0 +1,168 @@
+visualize   tabui:drop-ui
+meta        tabdoc:undo
+visualize   tabdoc:show-me
+tabdoc:highlight
+tabdoc:move-dashboard-edge
+tabdoc:sort-from-indicator
+meta        tabdoc:rename-sheet
+tabdoc:move-free-form-zone
+tabdoc:select-legend-item
+tabui:change-aggregation-ui
+tabdoc:quantitative-quick-filter-edit
+meta        tabui:save-workbook
+meta        tabui:presentation-mode
+tabdoc:set-sheet-formatting
+tabdoc:filter-targets
+tabdoc:drop-on-dashboard
+tabui:edit-filter-ui
+tabdoc:remove-fields
+meta        tabui:new-worksheet-ui
+tabui:hide-zone-ui
+tabdoc:pane-zoom-factor
+tabui:edit-zone-param
+tabdoc:clear-legend-selection
+tabdoc:resize-header
+tabdoc:move-zone
+meta        tabui:reorder-sheets-ui
+meta        tabui:document
+tabui:edit-caption
+tabui:scroll-sheet
+meta        tabui:connection-analyze-data-ui
+tabui:edit-title
+tabdoc:set-primitive
+tabdoc:select-all
+tabdoc:update-mark-labels-settings
+tabui:delete-sheet-ui
+tabdoc:keep-only-or-exclude
+tabdoc:resize-cell
+tabui:show-quickfilter
+meta        tabdoc:redo
+tabdoc:mark-label
+tabdoc:toggle-legend-item-selection
+tabdoc:add-object-to-dashboard
+tabdoc:toggle-freeform-zone
+tabdoc:update-selection-delta
+meta        tabui:rename-sheet-ui
+meta        tabui:upgrade-datasources-ui
+tabdoc:zoom-level
+tabui:color-legend-edit-ui
+tabdoc:quick-sort
+tabdoc:swap-rows-and-columns
+tabdoc:change-size
+tabui:create-numeric-bins-ui
+tabdoc:set-item-color
+tabui:format-ui
+tabui:duplicate-sheet-ui
+tabui:edit-datasource
+meta        tabui:new-dashboard-ui
+meta        tabui:connection-add-new-table-ui
+meta        tabui:connect-datasource
+tabdoc:master-detail-filter
+tabui:duplicate-sheet-or-crosstab-ui
+tabui:view-caption-card
+tabdoc:change-semantic-role
+tabui:display-encoding-type-menu
+tabui:copy-image-worksheet
+tabui:view-dashboard-title
+tabui:delete-fields-ui
+transform   tabui:create-calculation-ui
+tabdoc:edit-story-point-caption
+tabui:create-categorical-bins-ui
+tabui:edit-datasource-filters-ui
+tabui:describe-field-ui
+tabui:domain-quick-filter
+tabdoc:set-active-story-point
+tabui:export-workbook-sheets-ui
+meta        tabui:paste
+tabui:edit-filter-quick-filter
+tabui:add-to-sheet-ui
+tabui:cat-mode-quick-filter
+tabui:edit-axis-ui
+tabui:view-data
+meta        tabdoc:extract
+tabdoc:hide-label
+tabui:edit-schema-numeric-bins-ui
+tabui:table-calc-ui
+tabui:edit-parameter
+tabdoc:convert-to-discrete
+tabui:actions-edit-dashboard
+tabdoc:set-dashboard-size
+tabui:include-exclude-values-quick-filter
+tabui:replace-story-point-ui
+tabdoc:change-markers
+tabdoc:select-legend-items
+tabui:edit-schema-categorical-bins-ui
+tabui:copy-image-dashboard
+meta        tabui:save-as-workbook
+meta        tabui:open-workbook
+tabui:toggle-filmstrip-ui
+tabdoc:clear-quick-filter
+tabui:delete-story-point-ui
+tabui:show-field-format-ui
+tabui:create-group-selection-ui
+tabdoc:convert-to-dimension
+meta        tabui:exit-application
+tabui:view-card
+tabdoc:hide-column-field-label
+tabui:view-summary-card
+tabui:view-quick-filters
+tabdoc:hide-field
+tabui:shape-legend-edit-ui
+tabdoc:reorder-legend-items
+tabdoc:relative-date-quick-filter-edit
+meta        tabui:sheet-sorter
+tabdoc:change-data-type
+tabdoc:set-filter-shared
+tabdoc:set-filter-context
+tabdoc:set-default-color
+tabui:trend-lines-ui
+tabui:format-label
+meta        tabui:new-storyboard-ui
+tabui:edit-schema-caption-ui
+tabui:deactivate-dashboard
+tabdoc:insert-story-point
+tabui:change-tab-color-sheet
+tabui:annotate-ui
+tabui:sort-field-label-ui
+tabui:show-cat-ctrl-quick-filter
+tabdoc:resize-axis
+tabui:refresh-datasource
+tabdoc:legend-keep-or-exclude
+tabui:format-field-label-ui
+tabdoc:add-sheet-to-dashboard
+meta        tabui:remove-mru
+tabui:format-legends-ui
+tabdoc:new-blank-story-point
+tabui:set-filter-shared-ui
+tabui:show-in-out-sets
+tabui:sort-ascending-field-label-ui
+tabdoc:goto-sheet
+tabui:change-field-type-ui
+tabdoc:add-to-sheet
+tabui:close-datasource
+meta        tabui:new-workbook
+tabui:hide-title
+tabdoc:change-label-font
+tabui:edit-default-sort-ui
+tabui:sort-ui
+tabui:reset-caption-ui
+tabui:connection-edit-connection-ui
+tabui:extract-ui
+tabui:show-quickfilter-ui
+tabui:view-datasource-data
+tabui:show-connect-tab
+tabdoc:show-hidden-fields
+tabdoc:quantitative-mode-quick-filter
+tabui:new-schema-drill-path-ui
+tabui:view-title-card
+tabui:publish-workbook-to-workgroup
+tabui:quick-table-calc-ui
+tabdoc:remove-field-label
+tabdoc:on-toggle-axis-ranges
+meta        tabui:save-public
+tabui:sort-descending-field-label-ui
+tabui:edit-schema-calculation-ui
+tabui:select-parent-zone
+tabui:create-set-ui
+tabui:export-packaged
+tabui:reset-cards

@@ -1,0 +1,379 @@
+<h1>Information missing from logged Tableau events</h1>
+
+<p><strong>Author:</strong> Sara Alspaugh </p>
+
+<p><strong>Affiliation:</strong> University of California, Berkeley</p>
+
+<p><strong>Contact:</strong> alspaugh@eecs.berkeley.edu</p>
+
+<p><strong>Last modified:</strong> 22 December 2014</p>
+
+<h2>Explanation of contents</h2>
+
+<p>This document describes (1) some logged Tableau events that are missing some information, and (2) some Tableau interactions that are not logged, in Tableau version 8.2. The missing information is identified with respect to our ultimate goal, so not all information that is missing from the logs is described, only that which is relevant to our goal. Our goal is to be able to reconstruct user actions and the application or interface state of Tableau from the Tableau event logs (contained in the log.txt file), for the purpose of building visualization recommendation tools. </p>
+
+<p>The events that we focus on are those that are keyed <code>command-pre</code> (i.e., <code>"k":"command-pre"</code>) because we have surmised that these events are the only ones that reflect user interaction that is relevant to our purposes. We believe these events to be almost identical to <code>"k":"command-post"</code> events with the exception of the timestamp (<code>ts</code>) and key (<code>k</code>), so if one of these events is changed, it may be desirable that the other is changed as well.</p>
+
+<p>There are two main sections to this document. The first section, <a href="#events-that-are-missing-information">Events that are missing information</a>, contains a list of currently logged Tableau events that are missing information and a description of what information needs to be added. The second section, <a href="#interactions-that-are-not-logged">Interactions that are not logged</a>, contains a list of information that is not currently logged, but might be useful to log.</p>
+
+<p>We have noted that one consistently missing piece of information is what visualization is shown after a user takes an action that would change the visualization. However, we understand that this information may be proprietary, and therefore not loggable.</p>
+
+<p>This is a work-in-progress document. Not all Tableau events or interactions have been evaluated for completeness for our purposes. Events may be added to the list -- when they are, they will be marked as "NEW", accompanied by the date added. </p>
+
+<p><strong>Summary of assumptions</strong> </p>
+
+<ul>
+<li>All relevant events are contained in the log.txt file contained in the Tableae log directory.</li>
+<li>The events are logged from Tableau version is 8.2 or versions with a comparable logging format</li>
+<li>The only type of events which reflect user interaction of interest are <code>"k":"command-pre"</code> events.</li>
+<li>The <code>"k":"command-pre"</code> events are all nearly identical to <code>"k":"command-post"</code> events in terms of parameter information; only things like timestamp (<code>ts</code>) and key (<code>k</code>) information differ. </li>
+<li>There is no "verbose mode" or other means to induce Tableau to log more information than is done by default.</li>
+<li>It is acceptable to log the visualization produced in response to relevant interactions, though this is not usually done.</li>
+</ul>
+
+<p><strong>Events that are missing information</strong></p>
+
+<ol>
+<li><a href="#create-calculation">Create calculation</a></li>
+<li><a href="#change-aggregation">Change aggregation</a></li>
+<li><a href="#drag-and-drop-field">Drag and drop field</a></li>
+<li><a href="#add-field-to-sheet-via-right-click">Add field to sheet via right click</a></li>
+<li><a href="#add-field-to-sheet-via-double-click">Add field to sheet via double click</a></li>
+<li><a href="#remove-fields">Remove fields</a></li>
+<li><a href="#clear-shelf">Clear shelf</a></li>
+<li><a href="#show-me">Show me</a></li>
+<li><a href="#undo">Undo</a></li>
+<li><a href="#duplicate-sheet">Duplicate sheet</a></li>
+<li><a href="#delete-sheet">Delete sheet</a></li>
+<li><a href="#clear-sheet">Clear sheet</a></li>
+<li><a href="#copy-data-from-sheet">Copy data from sheet</a></li>
+<li><a href="#paste">Paste</a></li>
+<li><a href="#drop-sheet-on-dashboard">Drop sheet on dashboard</a></li>
+</ol>
+
+<p><strong>Interactions that are not logged</strong></p>
+
+<ol>
+<li><a href="#switch-sheet">Switch sheet</a></li>
+<li><a href="#menu-open">Menu open</a></li>
+</ol>
+
+<p><strong>Miscellaneous suggestions</strong></p>
+
+<ul>
+<li>It may be helpful to at some point generate a guide that describes what physical interactions with Tableau generate which events (as identified by their key).</li>
+</ul>
+
+<h2>Events that are missing information</h2>
+
+<h3>Create calculation</h3>
+
+<p><strong>Event key:</strong> <code>tabui:create-calculation-ui</code> </p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-09-03T18:13:31.666","pid":13594,"tid":"6a7af","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabui:create-calculation-ui","args":"tabui:create-calculation-ui use-selector=\"true\""}}
+</code></p>
+
+<p><strong>Interaction description:</strong> 
+When the user creates a calculated field based on functions of other fields, Tableau emits <code>tabui:create-calculation-ui</code> events.
+The event notes that the calculation dialog was used <em>but not how the field was calculated</em>. This calculated field is also assigned an ID (based at least in part on the timestamp at the time of creation) that is used to refer to it in later events, such as <code>Calculation_6530903181331686</code>, which is referred to in the following <code>tabui:drop-ui</code> event:</p>
+
+<p><code>
+{"ts":"2014-09-03T18:16:04.019","pid":13594,"tid":"6a7af","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabui:drop-ui","args":"tabui:drop-ui drag-description=\"\" drag-source=\"drag-drop-schema\" drop-target=\"drag-drop-viz\" field-encodings=[{\"fn\": \"[On_Time_On_Time_Performance_2001_9 Extract].[sum:Calculation_6530903181331686:qk]\",\"encoding-type\": \"invalid-encoding\"}] is-copy=\"false\" is-dead-drop=\"false\" is-right-drag=\"false\" shelf-drag-source-position={\"is-override\": false} shelf-drop-context=\"none\" shelf-drop-target-position={\"shelf-type\": \"rows-shelf\",\"shelf-pos-index\": 2,\"is-override\": false} target-sheet=\"Sheet 1\""}}
+</code></p>
+
+<p><strong>Missing information to add:</strong></p>
+
+<ul>
+<li>The name given to the calculated field</li>
+<li>The formula used to compute the field</li>
+</ul>
+
+<h3>Change aggregation</h3>
+
+<p><strong>Event key:</strong> <code>tabui:change-aggregation-ui</code>  </p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-21T21:54:43.829","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabui:change-aggregation-ui","args":"tabui:change-aggregation-ui aggregation=\"count\""}}
+</code></p>
+
+<p><strong>Interaction description:</strong> An aggregated field (one that is labeled as AGG(Field), for example) is right-clicked, "Measure (Aggregation)" is highlighted and then an aggregation is selected. The event does not note what field the aggregation was changed on or what the aggregation was previously. </p>
+
+<p><strong>Missing information to add:</strong></p>
+
+<ul>
+<li>The field for which the aggregation was changed</li>
+<li>The original aggregation that was changed from</li>
+</ul>
+
+<h3>Drag and drop field</h3>
+
+<p><strong>Event key:</strong> <code>tabui:drop-ui</code> </p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-22T14:41:13.896","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabui:drop-ui","args":"tabui:drop-ui drag-description=\"\" drag-source=\"drag-drop-schema\" drop-target=\"drag-drop-viz\" field-encodings=[{\"fn\": \"[textscan.41978.672928009300].[none:columns:ok]\",\"encoding-type\": \"invalid-encoding\"}] is-copy=\"false\" is-dead-drop=\"false\" is-right-drag=\"false\" shelf-drag-source-position={\"is-override\": false} shelf-drop-context=\"none\" shelf-drop-target-position={\"shelf-type\": \"rows-shelf\",\"shelf-pos-index\": 0,\"is-override\": false} target-sheet=\"Sheet 26\""}}
+</code></p>
+
+<p><strong>Interaction description:</strong> A field is dragged and dropped from one location to the other. The corresponding event describes a lot of information but one thing that is missing is a description of what visualization is generated in response to the action. </p>
+
+<p><strong>Missing information to add:</strong> </p>
+
+<ul>
+<li>What visualization is shown in response to the current visualization</li>
+</ul>
+
+<h3>Add field to sheet via right click</h3>
+
+<p><strong>Event key:</strong> <code>tabui:add-to-sheet-ui</code> </p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-22T12:33:23.211","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabui:add-to-sheet-ui","args":"tabui:add-to-sheet-ui schema-item-type=\"categorical\""}}
+</code></p>
+
+<p><strong>Interaction description:</strong> A field in the left-hand side bar (i.e., the schema) is right-clicked and then "Add to Sheet" is selected. The event does not say which field was added to the sheet, what sheet it was added to, where it was placed, or what visualization was shown in response. </p>
+
+<p><strong>Missing information to add:</strong></p>
+
+<ul>
+<li>What field was added to the sheet</li>
+<li>What sheet the field was added to</li>
+<li>Where the field was placed on the sheet</li>
+<li>What visualization was shown</li>
+</ul>
+
+<h3>Add field to sheet via double click</h3>
+
+<p><strong>Event key:</strong> <code>tabdoc:add-to-sheet</code> </p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-22T12:36:00.900","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabdoc:add-to-sheet","args":"tabdoc:add-to-sheet fn=\"[textscan.41978.672928009300].[county]\""}}
+</code></p>
+
+<p><strong>Interaction description:</strong> A field in the left-hand side bar (i.e., the schema) is double-clicked. This automatically adds the field to the sheet. The event does not note what sheet the field was added to, where it was placed on the sheet, or what visualization was shown. </p>
+
+<p><strong>Missing information to add:</strong></p>
+
+<ul>
+<li>The sheet that the field was added to</li>
+<li>Where the field was placed on the sheet </li>
+<li>What visualization was shown</li>
+</ul>
+
+<h3>Remove fields</h3>
+
+<p><strong>Event key:</strong> <code>tabdoc:remove-fields</code></p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-21T21:42:10.882","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabdoc:remove-fields","args":"tabdoc:remove-fields"}}
+</code></p>
+
+<p><strong>Interaction description:</strong> A field on a sheet is right-clicked and "Remove" is selected from the menu. The corresponding event does not note what field was removed, where it was removed from, or what visualization was shown in response. </p>
+
+<p><strong>Missing information to add:</strong></p>
+
+<ul>
+<li>The name of the field that is removed</li>
+<li>What sheet the field is removed from.</li>
+<li>What visualization was shown</li>
+</ul>
+
+<h3>Clear shelf</h3>
+
+<p><strong>Event key:</strong> <code>tabdoc:remove-fields-from-shelf</code></p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-22T13:55:51.088","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabdoc:remove-fields-from-shelf","args":"tabdoc:remove-fields-from-shelf shelf-type=\"filter-shelf\""}}
+</code></p>
+
+<p><strong>Interaction description:</strong> The small downward pointing arrow next to a shelf name is clicked and "Clear Shelf" is selected from the menu. The event does not note which sheet this occurs on or what visualization was shown in response. </p>
+
+<p><strong>Missing information to add:</strong></p>
+
+<ul>
+<li>The sheet fields were removed from</li>
+<li>(Optionally) which fields were removed</li>
+<li>What visualization was shown</li>
+</ul>
+
+<h3>Show me</h3>
+
+<p><strong>Event key:</strong> <code>tabdoc:show-me</code> </p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-22T13:36:16.641","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabdoc:show-me","args":"tabdoc:show-me show-me-command-type=\"filled-maps\" worksheet=\"Sheet 26\""}}
+</code></p>
+
+<p><strong>Interaction description:</strong> The Show Me tab is used to select a chart type. Upon selection, the visualization on the current sheet might change, including what fields are on what shelves. The event does not note the updated fields that are then present on the sheet or where they are located. </p>
+
+<p><strong>Missing information to add:</strong> </p>
+
+<ul>
+<li>What fields are present on the sheet after the Show Me command (including the aggregation applied to the fields, if relevant)</li>
+<li>The locations of the fields on the sheet after the Show Me command</li>
+</ul>
+
+<h3>Undo</h3>
+
+<p><strong>Event key:</strong> <code>tabdoc:undo</code> </p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-22T13:47:41.749","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabdoc:undo","args":"tabdoc:undo"}}
+</code></p>
+
+<p><strong>Interaction description:</strong> The "back" button is selected to undo the last action on the stack. The event does not note what action was undone. This is not strictly necessary but would be useful. </p>
+
+<p><strong>Missing information to add:</strong> </p>
+
+<ul>
+<li>What action was undone.</li>
+</ul>
+
+<h3>Duplicate sheet</h3>
+
+<p><strong>Event key:</strong> <code>tabui:duplicate-sheet-ui</code> </p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-21T21:49:49.086","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabui:duplicate-sheet-ui","args":"tabui:duplicate-sheet-ui"}}
+</code></p>
+
+<p><strong>Interaction description:</strong> A sheettab along the bottom of the interface is right-clicked and "Duplicate Sheet" is selected from the menu. The corresponding event does not note what sheet was duplicated or what name the new sheet was given.</p>
+
+<p><strong>Missing information to add:</strong></p>
+
+<ul>
+<li>What sheet was duplicated</li>
+<li>The name given to the new duplicate sheet</li>
+</ul>
+
+<h3>Delete sheet</h3>
+
+<p><strong>Event key:</strong> <code>tabui:delete-sheet-ui</code> </p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-21T21:46:44.098","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabui:delete-sheet-ui","args":"tabui:delete-sheet-ui"}}
+</code></p>
+
+<p><strong>Interaction description:</strong> A sheet tab along the bottom of the interface is right-clicked and "Delete Sheet" is selected from the menu. The corresponding event does not note what sheet was deleted.</p>
+
+<p><strong>Missing information to add:</strong> </p>
+
+<ul>
+<li>The name of the deleted sheet</li>
+</ul>
+
+<h3>Clear sheet</h3>
+
+<p><strong>Event key:</strong> <code>tabui:clear-sheet-ui</code></p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-22T13:51:55.184","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabui:clear-sheet-ui","args":"tabui:clear-sheet-ui"}}
+</code></p>
+
+<p><strong>Interaction description:</strong> The "Clear Sheet" button (i.e., with the red "X") at the top of the interface is clicked, removing all fields from the current sheet. The event does not note what sheet was cleared.</p>
+
+<p><strong>Missing information to add:</strong> </p>
+
+<ul>
+<li>What sheet was cleared</li>
+</ul>
+
+<h3>Copy data from sheet</h3>
+
+<p><strong>Event key:</strong> <code>tabui:copy-data</code> </p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-22T12:22:02.121","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabui:copy-data","args":"tabui:copy-data"}}
+</code></p>
+
+<p><strong>Interaction description:</strong> The keyboard shortcut for copy (i.e., command-c on OSX) is used when a sheet is selected. The event does not specify what sheet was selected when this occurs. </p>
+
+<p><strong>Missing information to add:</strong></p>
+
+<ul>
+<li>The sheet that was selected to copy data from</li>
+</ul>
+
+<h3>Paste</h3>
+
+<p><strong>Event key:</strong>  <code>tabui:paste</code></p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-22T12:21:32.646","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabui:paste","args":"tabui:paste"}}
+</code></p>
+
+<p><strong>Interaction description:</strong> The keyboard shortcut for paste (i.e., command-v on OSX) is used. The event does not specify what was pasted or where it was pasted.</p>
+
+<p><strong>Missing information to add:</strong></p>
+
+<ul>
+<li>What was pasted</li>
+<li>Where it was pasted to</li>
+</ul>
+
+<h3>Drop sheet on dashboard</h3>
+
+<p><strong>Event key:</strong> <code>tabdoc:drop-on-dashboard</code> </p>
+
+<p><strong>Example event:</strong></p>
+
+<p><code>
+{"ts":"2014-12-22T11:37:55.455","pid":96633,"tid":"91cc3c","sev":"info","req":"-","sess":"-","site":"-","user":"-","k":"command-pre","v":{"name":"tabdoc:drop-on-dashboard","args":"tabdoc:drop-on-dashboard add-as-floating=\"false\" drop-location={\"x\": 379,\"y\": 309} worksheet=\"Total errors by county\" zone-type=\"viz\""}}
+</code></p>
+
+<p><strong>Interaction description:</strong> When a dashboard sheet is active, a visualization sheet is dragged from the left side-bar to the main area and dropped. The dashboard the sheet is added to is not noted. </p>
+
+<p><strong>Missing information to add:</strong> </p>
+
+<ul>
+<li>Which dashboard the sheet is added to</li>
+</ul>
+
+<h2>Interactions that are not logged</h2>
+
+<h3>Switch sheet</h3>
+
+<p><strong>Interaction description:</strong> A sheet is selected via clicking on the tabs at the bottom of the interface or using keyboard shortcuts to navigate between tabs. There is currently no event for this as far as we can tell. This information would suffice in place of additional parameters for many of the other events that act on the current sheet and do not specify what sheet was acted on, because we would know what the current sheet is.  </p>
+
+<p><strong>Missing information to add:</strong> </p>
+
+<ul>
+<li>An event describing what sheet was switched to</li>
+</ul>
+
+<h3>Menu open</h3>
+
+<p><strong>Interaction description:</strong>  A user clicks on an interface element that pops up a menu list of possible options. Usually, when a user clicks on one of the options, an event is logged. However, it would be useful to know that a user opened a menu even if they selected no action, because this would allow the detection of "menu surfing".</p>
+
+<p><strong>Missing information to add:</strong> </p>
+
+<ul>
+<li>An event describing what menu was opened</li>
+</ul>

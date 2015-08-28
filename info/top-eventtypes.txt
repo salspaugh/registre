@@ -1,0 +1,50 @@
+- tabui:drop-ui
+- tabdoc:undo
+tabdoc:show-me
+tabdoc:select-legend-item
+- tabdoc:rename-sheet
+- tabdoc:move-dashboard-edge
+tabui:change-aggregation-ui
+- tabdoc:drop-on-dashboard
+tabdoc:remove-fields
+tabdoc:highlight
+tabdoc:sort-from-indicator
+tabdoc:filter-targets
+- tabui:new-worksheet-ui
+tabdoc:set-sheet-formatting
+- tabdoc:pane-zoom-factor
+tabdoc:quantitative-quick-filter-edit
+tabdoc:move-free-form-zone
+tabui:hide-zone-ui
+tabdoc:clear-legend-selection
+- tabui:duplicate-sheet-ui
+tabdoc:move-zone
+tabui:create-calculation-ui
+tabui:edit-zone-param
+tabui:edit-filter-ui
+tabui:presentation-mode
+- tabui:document
+- tabui:connection-analyze-data-ui
+tabdoc:toggle-legend-item-selection
+- tabdoc:resize-cell
+tabui:reorder-sheets-ui
+tabdoc:set-primitive
+- tabui:upgrade-datasources-ui
+tabui:edit-title
+tabdoc:keep-only-or-exclude
+tabui:color-legend-edit-ui
+tabui:edit-schema-calculation-ui
+- tabdoc:redo
+tabdoc:swap-rows-and-columns
+- tabui:connect-datasource
+- tabdoc:resize-header
+tabui:connection-add-new-table-ui
+tabdoc:select-all
+tabdoc:set-item-color
+tabui:edit-caption
+- tabui:scroll-sheet
+tabdoc:toggle-freeform-zone
+tabdoc:mark-label
+tabui:delete-sheet-ui
+tabui:table-calc-ordering-ui
+- tabui:new-dashboard-ui
