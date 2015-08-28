@@ -15,6 +15,7 @@ User interaction is primarily recorded in "command-pre" events which are written
 
 #### Navigating
 
+* `analysis/` analyses of the log data
 * `datasets/` data given to participants to explore in pilot study
 * `info/` miscellaneous and poorly documented information about the logs
 * `registre/` main Python modules
