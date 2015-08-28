@@ -1,0 +1,3081 @@
+category,idx,id,minute,event
+Start up or exit app,9,0,0.0,"{
+    ""action"": ""tabui:upgrade-datasources-ui"",
+    ""timestamp"": 1410129135.424
+}"
+Start up or exit app,9,1,3.033916668097178,"{
+    ""action"": ""tabui:open-workbook"",
+    ""timestamp"": 1410129317.459,
+    ""parameters"": {
+        ""file"": ""\""<workbook-reference name='EDA_Flight_Data' type='local'>\n<path>/Users/REDACTED/Documents/My Tableau Repository/Workbooks/EDA_Flight_Data.twb</path>\n</workbook-reference>\n\""""
+    }
+}"
+Start up or exit app,9,2,3.0750666658083596,"{
+    ""action"": ""tabui:upgrade-datasources-ui"",
+    ""timestamp"": 1410129319.928
+}"
+Manage or edit data,11,3,22.803849999109904,"{
+    ""action"": ""tabdoc:change-semantic-role"",
+    ""timestamp"": 1410130503.655,
+    ""parameters"": {
+        ""data-column-name"": ""[City].[Name]""
+    }
+}"
+Drag or drop field,17,4,22.85348333120346,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130506.633,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""columns-shelf"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+ShowMe,10,5,22.969233334064484,"{
+    ""action"": ""tabdoc:show-me"",
+    ""timestamp"": 1410130513.578,
+    ""parameters"": {
+        ""worksheet"": ""Sheet 6"",
+        ""show-me-command-type"": ""maps""
+    }
+}"
+Adjust GUI,12,6,23.279066665967306,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410130532.168,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Sheet 6""
+    }
+}"
+Adjust GUI,12,7,23.30640000104904,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410130533.808,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Sheet 6""
+    }
+}"
+Adjust GUI,12,8,23.400533334414163,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410130539.456,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Sheet 6""
+    }
+}"
+Adjust GUI,12,9,23.614916666348776,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410130552.319,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Sheet 6""
+    }
+}"
+Adjust GUI,12,10,23.826316666603088,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410130565.003,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Sheet 6""
+    }
+}"
+Drag or drop field,17,11,24.124216667811076,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130582.877,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,12,24.160466667016347,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130585.052,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            3
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""level-of-detail-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,13,24.189400001366934,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130586.788,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            3
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""level-of-detail-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,14,24.249149998029072,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130590.373,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""rows-shelf"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,15,24.397933332125344,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130599.3,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            2
+        ],
+        ""drag-description"": ""Rows"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""rows-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": false
+        }
+    }
+}"
+Manage or edit data,11,16,27.393416666984557,"{
+    ""action"": ""tabdoc:change-semantic-role"",
+    ""timestamp"": 1410130779.029,
+    ""parameters"": {
+        ""data-column-name"": ""[State].[Name]""
+    }
+}"
+Drag or drop field,17,17,27.50630000034968,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130785.802,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": true,
+            ""encoding-type"": ""color-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginState"",
+                        ""relation"": ""none:OriginState:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,18,27.668066664536795,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130795.508,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": true,
+            ""encoding-type"": ""text-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,19,28.086799999078114,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130820.632,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""show-me-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": false,
+            ""is-overlay"": true
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""shelf-selection"": [
+            4
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""text-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,20,28.143133334318797,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130824.012,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            5
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""level-of-detail-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 2,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,21,28.17363333304723,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130825.842,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            4
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""text-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,22,28.41899999777476,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130840.564,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": true,
+            ""encoding-type"": ""size-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginState"",
+                        ""relation"": ""none:OriginState:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Manage or edit data,11,23,28.566966664791106,"{
+    ""action"": ""tabui:change-aggregation-ui"",
+    ""timestamp"": 1410130849.442,
+    ""parameters"": {
+        ""aggregation"": ""count-d""
+    }
+}"
+Manage or edit data,11,24,28.731033333142598,"{
+    ""action"": ""tabui:change-aggregation-ui"",
+    ""timestamp"": 1410130859.286,
+    ""parameters"": {
+        ""aggregation"": ""count""
+    }
+}"
+Manage or edit data,11,25,29.7778333346049,"{
+    ""action"": ""tabui:change-aggregation-ui"",
+    ""timestamp"": 1410130922.094,
+    ""parameters"": {
+        ""aggregation"": ""min""
+    }
+}"
+Manage or edit data,11,26,29.933666666348774,"{
+    ""action"": ""tabui:change-aggregation-ui"",
+    ""timestamp"": 1410130931.444,
+    ""parameters"": {
+        ""aggregation"": ""count""
+    }
+}"
+Drag or drop field,17,27,30.141366664568583,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130943.906,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            4
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""size-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""cnt"",
+                        ""column"": ""OriginState"",
+                        ""relation"": ""cnt:OriginState:qk"",
+                        ""tabscale"": ""qk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,28,30.338616665204366,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130955.741,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": true,
+            ""encoding-type"": ""size-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginAirportID"",
+                        ""relation"": ""none:OriginAirportID:ok"",
+                        ""tabscale"": ""ok""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Manage or edit data,11,29,30.432116667429607,"{
+    ""action"": ""tabui:change-aggregation-ui"",
+    ""timestamp"": 1410130961.351,
+    ""parameters"": {
+        ""aggregation"": ""count""
+    }
+}"
+Manage or edit data,11,30,30.58145000139872,"{
+    ""action"": ""tabui:change-aggregation-ui"",
+    ""timestamp"": 1410130970.311,
+    ""parameters"": {
+        ""aggregation"": ""count-d""
+    }
+}"
+Drag or drop field,17,31,31.055616664886475,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410130998.761,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": true,
+            ""encoding-type"": ""size-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""shelf-selection"": [
+            4
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""size-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""ctd"",
+                        ""column"": ""OriginAirportID"",
+                        ""relation"": ""ctd:OriginAirportID:qk"",
+                        ""tabscale"": ""qk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,32,31.1001833319664,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410131001.435,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace-all"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": true,
+            ""encoding-type"": ""color-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""shelf-selection"": [
+            4
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""size-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""ctd"",
+                        ""column"": ""OriginAirportID"",
+                        ""relation"": ""ctd:OriginAirportID:qk"",
+                        ""tabscale"": ""qk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,33,31.143300000826518,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410131004.022,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": true,
+            ""encoding-type"": ""size-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""shelf-selection"": [
+            3
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""color-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""ctd"",
+                        ""column"": ""OriginAirportID"",
+                        ""relation"": ""ctd:OriginAirportID:qk"",
+                        ""tabscale"": ""qk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,34,31.209800000985464,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410131008.012,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": true,
+            ""encoding-type"": ""size-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""shelf-selection"": [
+            3
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""size-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""ctd"",
+                        ""column"": ""OriginAirportID"",
+                        ""relation"": ""ctd:OriginAirportID:qk"",
+                        ""tabscale"": ""qk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,35,31.341249998410543,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410131015.899,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": true,
+            ""encoding-type"": ""color-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginState"",
+                        ""relation"": ""none:OriginState:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Adjust GUI,12,36,31.46873333454132,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410131023.548,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""0.5"",
+        ""worksheet"": ""Sheet 6""
+    }
+}"
+Adjust GUI,12,37,31.87204999923706,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410131047.747,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Sheet 6""
+    }
+}"
+Adjust GUI,12,38,32.132766668001814,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410131063.39,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Sheet 6""
+    }
+}"
+Fix vis appearance,13,39,35.15036666790645,"{
+    ""action"": ""tabui:color-legend-edit-ui"",
+    ""timestamp"": 1410131244.446,
+    ""parameters"": {
+        ""legend-columns"": [
+            ""[textscan.41886.512368854200].[none:OriginState:nk]""
+        ]
+    }
+}"
+Unknown,7,40,35.376200000445046,"{
+    ""action"": ""tabdoc:set-primitive"",
+    ""timestamp"": 1410131257.996,
+    ""parameters"": {
+        ""primitive-type"": ""automatic"",
+        ""pane-spec"": ""0""
+    }
+}"
+Unknown,7,41,35.421483333905535,"{
+    ""action"": ""tabdoc:set-primitive"",
+    ""timestamp"": 1410131260.713,
+    ""parameters"": {
+        ""primitive-type"": ""automatic"",
+        ""pane-spec"": ""0""
+    }
+}"
+Fix vis appearance,13,42,35.47043333450953,"{
+    ""action"": ""tabui:color-legend-edit-ui"",
+    ""timestamp"": 1410131263.65,
+    ""parameters"": {
+        ""legend-columns"": [
+            ""[textscan.41886.512368854200].[none:OriginState:nk]""
+        ]
+    }
+}"
+Fix vis appearance,13,43,36.02806666692098,"{
+    ""action"": ""tabdoc:set-item-color"",
+    ""timestamp"": 1410131297.108,
+    ""parameters"": {
+        ""item-color-pairs"": [
+            {
+                ""object-id"": 0,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 1,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 2,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 3,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 4,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 5,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 6,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 7,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 8,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 9,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 10,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 11,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 12,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 13,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 14,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 15,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 16,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 17,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 18,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 19,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 20,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 21,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 22,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 23,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 24,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 25,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 26,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 27,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 28,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 29,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 30,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 31,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 32,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 33,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 34,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 35,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 36,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 37,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 38,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 39,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 40,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 41,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 42,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 43,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 44,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 45,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 46,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 47,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 48,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 49,
+                ""color"": ""rgb(31,119,180)""
+            },
+            {
+                ""object-id"": 50,
+                ""color"": ""rgb(31,119,180)""
+            }
+        ],
+        ""field-vector"": [
+            ""[textscan.41886.512368854200].[none:OriginState:nk]""
+        ],
+        ""is-instance"": ""true""
+    }
+}"
+Drag or drop field,17,44,36.56278333266576,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410131329.191,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": true,
+            ""encoding-type"": ""size-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""sum"",
+                        ""column"": ""DepDelay"",
+                        ""relation"": ""sum:DepDelay:qk"",
+                        ""tabscale"": ""qk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Manage or edit data,11,45,36.78881666660309,"{
+    ""action"": ""tabui:change-aggregation-ui"",
+    ""timestamp"": 1410131342.753,
+    ""parameters"": {
+        ""aggregation"": ""count""
+    }
+}"
+Create derived field,5,46,37.313299997647604,"{
+    ""action"": ""tabui:create-calculation-ui"",
+    ""timestamp"": 1410131374.222,
+    ""parameters"": {
+        ""use-selector"": ""true""
+    }
+}"
+Drag or drop field,17,47,39.31258333126704,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410131494.179,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace-all"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": true,
+            ""encoding-type"": ""color-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Create derived field,5,48,41.43336666822434,"{
+    ""action"": ""tabui:create-calculation-ui"",
+    ""timestamp"": 1410131621.426,
+    ""parameters"": {
+        ""use-selector"": ""true""
+    }
+}"
+Manage or edit data,11,49,45.45008333126704,"{
+    ""action"": ""tabdoc:change-semantic-role"",
+    ""timestamp"": 1410131862.429,
+    ""parameters"": {
+        ""data-column-name"": ""[City].[Name]""
+    }
+}"
+Drag or drop field,17,50,45.50443333387375,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410131865.69,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            3
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""color-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,51,45.652033332983656,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410131874.546,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginState"",
+                        ""relation"": ""none:OriginState:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,52,45.696566665172575,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410131877.218,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            3
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""size-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""cnt"",
+                        ""column"": ""DepDelay"",
+                        ""relation"": ""cnt:DepDelay:qk"",
+                        ""tabscale"": ""qk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,53,45.77409999767939,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410131881.87,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""Calculation_0070907161341441"",
+                        ""relation"": ""none:Calculation_0070907161341441:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,54,45.896466664473216,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410131889.212,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 2,
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,55,45.96430000066757,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410131893.282,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            5
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""level-of-detail-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginCityName"",
+                        ""relation"": ""none:OriginCityName:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 2,
+            ""is-override"": false
+        }
+    }
+}"
+Manage or edit data,11,56,46.05635000069936,"{
+    ""action"": ""tabui:set-default-location-ui"",
+    ""timestamp"": 1410131898.805,
+    ""parameters"": {
+        ""fn"": ""[textscan.41886.512368854200].[none:Calculation_0070907161341441:nk]""
+    }
+}"
+Manage or edit data,11,57,52.826850001017256,"{
+    ""action"": ""tabui:set-default-location-ui"",
+    ""timestamp"": 1410132305.035,
+    ""parameters"": {
+        ""fn"": ""[textscan.41886.512368854200].[none:Calculation_0070907161341441:nk]""
+    }
+}"
+Manage or edit data,11,58,54.204116666316985,"{
+    ""action"": ""tabui:set-default-location-ui"",
+    ""timestamp"": 1410132387.671,
+    ""parameters"": {
+        ""fn"": ""[textscan.41886.512368854200].[none:Calculation_0070907161341441:nk]""
+    }
+}"
+Manage or edit data,11,59,54.47003333171209,"{
+    ""action"": ""tabui:set-default-location-ui"",
+    ""timestamp"": 1410132403.626,
+    ""parameters"": {
+        ""fn"": ""[textscan.41886.512368854200].[none:Calculation_0070907161341441:nk]""
+    }
+}"
+Adjust GUI,12,60,54.92414999802907,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410132430.873,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""0.5"",
+        ""worksheet"": ""Sheet 6""
+    }
+}"
+Manage or edit data,11,61,55.377883330980936,"{
+    ""action"": ""tabui:set-default-location-ui"",
+    ""timestamp"": 1410132458.097,
+    ""parameters"": {
+        ""fn"": ""[textscan.41886.512368854200].[none:Calculation_0070907161341441:nk]""
+    }
+}"
+Adjust GUI,12,62,55.91746666431427,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410132490.472,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Sheet 6""
+    }
+}"
+Drag or drop field,17,63,56.797300000985466,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132543.262,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": true,
+            ""encoding-type"": ""size-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""sum"",
+                        ""column"": ""DepDelay"",
+                        ""relation"": ""sum:DepDelay:qk"",
+                        ""tabscale"": ""qk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Manage or edit data,11,64,56.92264999945959,"{
+    ""action"": ""tabui:change-aggregation-ui"",
+    ""timestamp"": 1410132550.783,
+    ""parameters"": {
+        ""aggregation"": ""count""
+    }
+}"
+Drag or drop field,17,65,57.414933331807454,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132580.32,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": true,
+            ""encoding-type"": ""text-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginAirportID"",
+                        ""relation"": ""none:OriginAirportID:ok"",
+                        ""tabscale"": ""ok""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,66,57.489616668224336,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132584.801,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            4
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""text-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginAirportID"",
+                        ""relation"": ""none:OriginAirportID:ok"",
+                        ""tabscale"": ""ok""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,67,57.583366668224336,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132590.426,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": true,
+            ""encoding-type"": ""text-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginAirportSeqID"",
+                        ""relation"": ""none:OriginAirportSeqID:ok"",
+                        ""tabscale"": ""ok""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,68,57.654050000508626,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132594.667,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            4
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""text-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""OriginAirportSeqID"",
+                        ""relation"": ""none:OriginAirportSeqID:ok"",
+                        ""tabscale"": ""ok""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,69,57.76341666777929,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132601.229,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": true,
+            ""encoding-type"": ""text-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""Origin"",
+                        ""relation"": ""none:Origin:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,70,58.068099999427794,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132619.51,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 4,
+            ""is-override"": true,
+            ""encoding-type"": ""tooltip-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""shelf-selection"": [
+            3
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""size-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""cnt"",
+                        ""column"": ""DepDelay"",
+                        ""relation"": ""cnt:DepDelay:qk"",
+                        ""tabscale"": ""qk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,71,58.14699999888738,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132624.244,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 4,
+            ""is-override"": true,
+            ""encoding-type"": ""tooltip-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""shelf-selection"": [
+            3
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""text-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""Origin"",
+                        ""relation"": ""none:Origin:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,72,58.334949998060864,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132635.521,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            6
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""tooltip-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""attr"",
+                        ""column"": ""Origin"",
+                        ""relation"": ""attr:Origin:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 3,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,73,58.46536666552226,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132643.346,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": true,
+            ""encoding-type"": ""size-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""shelf-selection"": [
+            5
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""tooltip-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""cnt"",
+                        ""column"": ""DepDelay"",
+                        ""relation"": ""cnt:DepDelay:qk"",
+                        ""tabscale"": ""qk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 2,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,74,58.76054999828339,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132661.057,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": true,
+            ""encoding-type"": ""text-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""Origin"",
+                        ""relation"": ""none:Origin:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,75,58.830250000953676,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132665.239,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 4,
+            ""is-override"": true,
+            ""encoding-type"": ""tooltip-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""shelf-selection"": [
+            6
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""level-of-detail-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""Calculation_0070907161341441"",
+                        ""relation"": ""none:Calculation_0070907161341441:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 3,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,76,58.93903333346049,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132671.766,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-none"",
+        ""shelf-selection"": [
+            6
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""tooltip-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""attr"",
+                        ""column"": ""Calculation_0070907161341441"",
+                        ""relation"": ""attr:Calculation_0070907161341441:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-dead-drop"": ""false"",
+        ""is-right-drag"": ""false"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 3,
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,77,59.110333331425984,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132682.044,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 3,
+            ""is-override"": false
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""Calculation_0070907161341441"",
+                        ""relation"": ""none:Calculation_0070907161341441:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Drag or drop field,17,78,59.173666667938235,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410132685.844,
+    ""parameters"": {
+        ""source-sheet"": ""Sheet 6"",
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 4,
+            ""is-override"": true,
+            ""encoding-type"": ""tooltip-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""shelf-selection"": [
+            4
+        ],
+        ""drag-description"": ""Encodings"",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""text-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""none"",
+                        ""column"": ""Origin"",
+                        ""relation"": ""none:Origin:nk"",
+                        ""tabscale"": ""nk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Sheet 6"",
+        ""drag-source"": ""drag-drop-viz"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-drop-action"": ""replace"",
+            ""shelf-pos-index"": 1,
+            ""is-override"": false
+        }
+    }
+}"
+Copy or paste,3,79,65.98224999904633,"{
+    ""action"": ""tabui:duplicate-sheet-ui"",
+    ""timestamp"": 1410133094.359
+}"
+Rename sheet,6,80,66.17718333403269,"{
+    ""action"": ""tabdoc:rename-sheet"",
+    ""timestamp"": 1410133106.055,
+    ""parameters"": {
+        ""set-active"": ""false"",
+        ""sheet"": ""Sheet 6"",
+        ""new-sheet"": ""Number of Delays Map""
+    }
+}"
+Rename sheet,6,81,66.30121666590372,"{
+    ""action"": ""tabdoc:rename-sheet"",
+    ""timestamp"": 1410133113.497,
+    ""parameters"": {
+        ""set-active"": ""false"",
+        ""sheet"": ""Sheet 7"",
+        ""new-sheet"": ""Length of Delays Map""
+    }
+}"
+Manage or edit data,11,82,66.93601666688919,"{
+    ""action"": ""tabui:change-aggregation-ui"",
+    ""timestamp"": 1410133151.585,
+    ""parameters"": {
+        ""aggregation"": ""average""
+    }
+}"
+Manage or edit data,11,83,67.21449999809265,"{
+    ""action"": ""tabui:view-data"",
+    ""timestamp"": 1410133168.294,
+    ""parameters"": {
+        ""worksheet"": ""Length of Delays Map"",
+        ""selector"": {}
+    }
+}"
+Manage or edit data,11,84,67.35175000031789,"{
+    ""action"": ""tabui:view-data"",
+    ""timestamp"": 1410133176.529,
+    ""parameters"": {
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Edit story or dashboard,15,85,68.94151666561763,"{
+    ""action"": ""tabdoc:pane-zoom-pan"",
+    ""timestamp"": 1410133271.915,
+    ""parameters"": {
+        ""zoom-in"": ""true"",
+        ""worksheet"": ""Length of Delays Map"",
+        ""pan-location"": {
+            ""y"": 298,
+            ""x"": 656
+        }
+    }
+}"
+Manage or edit data,11,86,69.12291666666667,"{
+    ""action"": ""tabui:view-data"",
+    ""timestamp"": 1410133282.799,
+    ""parameters"": {
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Adjust GUI,12,87,70.08444999853769,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410133340.491,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Adjust GUI,12,88,70.17376666466394,"{
+    ""action"": ""tabdoc:pane-zoom"",
+    ""timestamp"": 1410133345.85,
+    ""parameters"": {
+        ""zoom-in"": ""true"",
+        ""pane-resolver-location"": {
+            ""y"": 367,
+            ""x"": 314
+        },
+        ""drag-rect"": {
+            ""y"": 360,
+            ""x"": 283,
+            ""w"": 64,
+            ""h"": 16
+        },
+        ""focus"": ""false"",
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Adjust GUI,12,89,70.20803333123526,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410133347.906,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Adjust GUI,12,90,70.22888333400091,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410133349.157,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Adjust GUI,12,91,70.2409500002861,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410133349.881,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Adjust GUI,12,92,70.24956666628519,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410133350.398,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Adjust GUI,12,93,70.26153333187104,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410133351.116,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Adjust GUI,12,94,70.43634999990464,"{
+    ""action"": ""tabdoc:pane-zoom"",
+    ""timestamp"": 1410133361.605,
+    ""parameters"": {
+        ""zoom-in"": ""true"",
+        ""pane-resolver-location"": {
+            ""y"": 361,
+            ""x"": 570
+        },
+        ""drag-rect"": {
+            ""y"": 138,
+            ""x"": 260,
+            ""w"": 621,
+            ""h"": 448
+        },
+        ""focus"": ""false"",
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Adjust GUI,12,95,70.56108333269755,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410133369.089,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""0.5"",
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Adjust GUI,12,96,70.69013333320618,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410133376.832,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Drag or drop field,17,97,71.28530000050863,"{
+    ""action"": ""tabui:drop-ui"",
+    ""timestamp"": 1410133412.542,
+    ""parameters"": {
+        ""shelf-drop-target-position"": {
+            ""shelf-type"": ""encoding-shelf"",
+            ""shelf-pos-index"": 0,
+            ""is-override"": true,
+            ""encoding-type"": ""color-encoding""
+        },
+        ""drop-target"": ""drag-drop-viz"",
+        ""drag-description"": """",
+        ""field-encodings"": [
+            {
+                ""encoding-type"": ""invalid-encoding"",
+                ""fn"": {
+                    ""table"": ""textscan.41886.512368854200"",
+                    ""relation"": {
+                        ""aggregate"": ""sum"",
+                        ""column"": ""DepDelay"",
+                        ""relation"": ""sum:DepDelay:qk"",
+                        ""tabscale"": ""qk""
+                    }
+                }
+            }
+        ],
+        ""shelf-drop-context"": ""none"",
+        ""is-right-drag"": ""false"",
+        ""is-dead-drop"": ""false"",
+        ""target-sheet"": ""Length of Delays Map"",
+        ""drag-source"": ""drag-drop-schema"",
+        ""is-copy"": ""false"",
+        ""shelf-drag-source-position"": {
+            ""is-override"": false
+        }
+    }
+}"
+Manage or edit data,11,98,71.3993166645368,"{
+    ""action"": ""tabui:change-aggregation-ui"",
+    ""timestamp"": 1410133419.383,
+    ""parameters"": {
+        ""aggregation"": ""average""
+    }
+}"
+Fix vis appearance,13,99,71.46086666584014,"{
+    ""action"": ""tabui:color-legend-edit-ui"",
+    ""timestamp"": 1410133423.076,
+    ""parameters"": {
+        ""legend-columns"": [
+            ""[textscan.41886.512368854200].[avg:DepDelay:qk]""
+        ]
+    }
+}"
+Adjust GUI,12,100,72.69643333355586,"{
+    ""action"": ""tabdoc:pane-zoom"",
+    ""timestamp"": 1410133497.21,
+    ""parameters"": {
+        ""zoom-in"": ""true"",
+        ""pane-resolver-location"": {
+            ""y"": 339,
+            ""x"": 556
+        },
+        ""drag-rect"": {
+            ""y"": 128,
+            ""x"": 172,
+            ""w"": 769,
+            ""h"": 423
+        },
+        ""focus"": ""false"",
+        ""worksheet"": ""Length of Delays Map""
+    }
+}"
+Fix vis appearance,13,101,72.87791666587194,"{
+    ""action"": ""tabui:color-legend-edit-ui"",
+    ""timestamp"": 1410133508.099,
+    ""parameters"": {
+        ""legend-columns"": [
+            ""[textscan.41886.512368854200].[avg:DepDelay:qk]""
+        ]
+    }
+}"
+Fix vis appearance,13,102,73.14901666641235,"{
+    ""action"": ""tabui:color-legend-edit-ui"",
+    ""timestamp"": 1410133524.365,
+    ""parameters"": {
+        ""legend-columns"": [
+            ""[textscan.41886.512368854200].[avg:DepDelay:qk]""
+        ]
+    }
+}"
+New sheet or dashboard,4,103,73.8997499982516,"{
+    ""action"": ""tabui:new-dashboard-ui"",
+    ""timestamp"": 1410133569.409,
+    ""parameters"": {
+        ""position"": ""8""
+    }
+}"
+Edit story or dashboard,15,104,74.03356666564942,"{
+    ""action"": ""tabdoc:drop-on-dashboard"",
+    ""timestamp"": 1410133577.438,
+    ""parameters"": {
+        ""drop-location"": {
+            ""y"": 474,
+            ""x"": 393
+        },
+        ""worksheet"": ""Length of Delays Map"",
+        ""add-as-floating"": ""false"",
+        ""zone-type"": ""viz""
+    }
+}"
+Edit story or dashboard,15,105,74.07579999764761,"{
+    ""action"": ""tabdoc:drop-on-dashboard"",
+    ""timestamp"": 1410133579.972,
+    ""parameters"": {
+        ""drop-location"": {
+            ""y"": 63,
+            ""x"": 257
+        },
+        ""worksheet"": ""Number of Delays Map"",
+        ""add-as-floating"": ""false"",
+        ""zone-type"": ""viz""
+    }
+}"
+Annotate vis,8,106,74.418783334891,"{
+    ""action"": ""tabui:view-legend"",
+    ""timestamp"": 1410133600.551,
+    ""parameters"": {
+        ""legend-names"": [
+            ""[textscan.41886.512368854200].[cnt:DepDelay:qk]""
+        ],
+        ""legend-type"": ""size""
+    }
+}"
+Edit story or dashboard,15,107,74.41880000034968,"{
+    ""action"": ""tabdoc:show-legend-on-dashboard"",
+    ""timestamp"": 1410133600.552,
+    ""parameters"": {
+        ""zone-param"": ""[textscan.41886.512368854200].[cnt:DepDelay:qk]"",
+        ""show-legend"": ""false"",
+        ""legend-type"": ""size""
+    }
+}"
+Adjust GUI,12,108,74.7167833328247,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410133618.431,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""0.5"",
+        ""dashboard"": ""Dashboard 3"",
+        ""worksheet"": ""Number of Delays Map""
+    }
+}"
+Adjust GUI,12,109,74.74253333409628,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410133619.976,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""dashboard"": ""Dashboard 3"",
+        ""worksheet"": ""Number of Delays Map""
+    }
+}"
+Adjust GUI,12,110,74.89283333222072,"{
+    ""action"": ""tabdoc:pane-zoom"",
+    ""timestamp"": 1410133628.994,
+    ""parameters"": {
+        ""zoom-in"": ""true"",
+        ""worksheet"": ""Number of Delays Map"",
+        ""focus"": ""false"",
+        ""pane-resolver-location"": {
+            ""y"": 163,
+            ""x"": 352
+        },
+        ""dashboard"": ""Dashboard 3"",
+        ""drag-rect"": {
+            ""y"": 46,
+            ""x"": 91,
+            ""w"": 523,
+            ""h"": 235
+        }
+    }
+}"
+Adjust GUI,12,111,74.92993333339692,"{
+    ""action"": ""tabdoc:pane-zoom-factor"",
+    ""timestamp"": 1410133631.22,
+    ""parameters"": {
+        ""pane-resolver-location"": {
+            ""y"": 1,
+            ""x"": 1
+        },
+        ""zoom-factor"": ""2"",
+        ""dashboard"": ""Dashboard 3"",
+        ""worksheet"": ""Number of Delays Map""
+    }
+}"
+Adjust GUI,12,112,75.13169999917348,"{
+    ""action"": ""tabdoc:pane-zoom"",
+    ""timestamp"": 1410133643.326,
+    ""parameters"": {
+        ""zoom-in"": ""true"",
+        ""worksheet"": ""Number of Delays Map"",
+        ""focus"": ""false"",
+        ""pane-resolver-location"": {
+            ""y"": 202,
+            ""x"": 473
+        },
+        ""dashboard"": ""Dashboard 3"",
+        ""drag-rect"": {
+            ""y"": 101,
+            ""x"": 246,
+            ""w"": 456,
+            ""h"": 203
+        }
+    }
+}"
+Fix vis appearance,13,113,75.34423333406448,"{
+    ""action"": ""tabui:view-card"",
+    ""timestamp"": 1410133656.078,
+    ""parameters"": {
+        ""id"": ""32841""
+    }
+}"
+Fix vis appearance,13,114,75.36540000041326,"{
+    ""action"": ""tabui:view-card"",
+    ""timestamp"": 1410133657.348,
+    ""parameters"": {
+        ""id"": ""32841""
+    }
+}"
+Edit story or dashboard,15,115,75.4444000005722,"{
+    ""action"": ""tabdoc:set-dashboard-size"",
+    ""timestamp"": 1410133662.088,
+    ""parameters"": {
+        ""max-height"": ""600"",
+        ""max-width"": ""1000"",
+        ""min-height"": ""600"",
+        ""dashboard"": ""Dashboard 3"",
+        ""min-width"": ""1000""
+    }
+}"
+Edit story or dashboard,15,116,75.52418333292007,"{
+    ""action"": ""tabdoc:set-dashboard-size"",
+    ""timestamp"": 1410133666.875,
+    ""parameters"": {
+        ""max-height"": ""700"",
+        ""max-width"": ""1000"",
+        ""min-height"": ""700"",
+        ""dashboard"": ""Dashboard 3"",
+        ""min-width"": ""1000""
+    }
+}"
+Interact with vis,16,117,75.59486666520436,"{
+    ""action"": ""tabdoc:clear-legend-selection"",
+    ""timestamp"": 1410133671.116,
+    ""parameters"": {
+        ""legend-names"": [
+            ""[textscan.41886.512368854200].[avg:DepDelay:qk]""
+        ],
+        ""worksheet"": ""Length of Delays Map"",
+        ""dashboard"": ""Dashboard 3"",
+        ""legend-type"": ""size""
+    }
+}"
+Interact with vis,16,118,75.60513333479564,"{
+    ""action"": ""tabdoc:clear-legend-selection"",
+    ""timestamp"": 1410133671.732,
+    ""parameters"": {
+        ""legend-names"": [
+            ""[textscan.41886.512368854200].[avg:DepDelay:qk]""
+        ],
+        ""worksheet"": ""Length of Delays Map"",
+        ""dashboard"": ""Dashboard 3"",
+        ""legend-type"": ""size""
+    }
+}"
+Fix vis appearance,13,119,75.64709999958674,"{
+    ""action"": ""tabui:format-legends-ui"",
+    ""timestamp"": 1410133674.25
+}"
+Edit story or dashboard,15,120,75.74161666631699,"{
+    ""action"": ""tabdoc:toggle-freeform-zone"",
+    ""timestamp"": 1410133679.921,
+    ""parameters"": {
+        ""zone-id"": ""7""
+    }
+}"
+Edit story or dashboard,15,121,75.7881500005722,"{
+    ""action"": ""tabdoc:move-zone"",
+    ""timestamp"": 1410133682.713,
+    ""parameters"": {
+        ""drop-location"": {
+            ""y"": 482,
+            ""x"": 762
+        },
+        ""add-as-floating"": ""true"",
+        ""zone-id"": ""7"",
+        ""grab-location"": {
+            ""y"": 149,
+            ""x"": 887
+        }
+    }
+}"
+Edit story or dashboard,15,122,75.88300000031789,"{
+    ""action"": ""tabdoc:toggle-freeform-zone"",
+    ""timestamp"": 1410133688.404,
+    ""parameters"": {
+        ""zone-id"": ""6""
+    }
+}"
+Edit story or dashboard,15,123,75.92858333190283,"{
+    ""action"": ""tabdoc:move-zone"",
+    ""timestamp"": 1410133691.139,
+    ""parameters"": {
+        ""drop-location"": {
+            ""y"": 397,
+            ""x"": 922
+        },
+        ""add-as-floating"": ""true"",
+        ""zone-id"": ""6"",
+        ""grab-location"": {
+            ""y"": 22,
+            ""x"": 890
+        }
+    }
+}"
+Edit story or dashboard,15,124,76.02424999872844,"{
+    ""action"": ""tabdoc:move-zone"",
+    ""timestamp"": 1410133696.879,
+    ""parameters"": {
+        ""drop-location"": {
+            ""y"": 528,
+            ""x"": 905
+        },
+        ""add-as-floating"": ""true"",
+        ""zone-id"": ""7"",
+        ""grab-location"": {
+            ""y"": 481,
+            ""x"": 754
+        }
+    }
+}"
+Annotate vis,8,125,76.12378333409627,"{
+    ""action"": ""tabui:view-legend"",
+    ""timestamp"": 1410133702.851,
+    ""parameters"": {
+        ""legend-names"": [
+            ""[textscan.41886.512368854200].[cnt:DepDelay:qk]""
+        ],
+        ""legend-type"": ""size""
+    }
+}"
+Edit story or dashboard,15,126,76.12378333409627,"{
+    ""action"": ""tabdoc:show-legend-on-dashboard"",
+    ""timestamp"": 1410133702.851,
+    ""parameters"": {
+        ""zone-param"": ""[textscan.41886.512368854200].[cnt:DepDelay:qk]"",
+        ""show-legend"": ""true"",
+        ""legend-type"": ""size""
+    }
+}"
+Interact with vis,16,127,76.26504999796549,"{
+    ""action"": ""tabdoc:select-legend-item"",
+    ""timestamp"": 1410133711.327,
+    ""parameters"": {
+        ""legend-names"": [
+            ""[textscan.41886.512368854200].[avg:DepDelay:qk]""
+        ],
+        ""worksheet"": ""Length of Delays Map"",
+        ""dashboard"": ""Dashboard 3"",
+        ""legend-type"": ""size""
+    }
+}"
+Edit story or dashboard,15,128,76.30008333126703,"{
+    ""action"": ""tabdoc:move-free-form-zone"",
+    ""timestamp"": 1410133713.429,
+    ""parameters"": {
+        ""y"": ""381"",
+        ""h"": ""134"",
+        ""zone-id"": ""6"",
+        ""w"": ""140"",
+        ""x"": ""847""
+    }
+}"
+Edit story or dashboard,15,129,76.38878333171209,"{
+    ""action"": ""tabdoc:toggle-freeform-zone"",
+    ""timestamp"": 1410133718.751,
+    ""parameters"": {
+        ""zone-id"": ""7""
+    }
+}"
+Edit story or dashboard,15,130,76.46266666650772,"{
+    ""action"": ""tabdoc:move-zone"",
+    ""timestamp"": 1410133723.184,
+    ""parameters"": {
+        ""drop-location"": {
+            ""y"": 241,
+            ""x"": 939
+        },
+        ""add-as-floating"": ""false"",
+        ""zone-id"": ""7"",
+        ""grab-location"": {
+            ""y"": 4,
+            ""x"": 629
+        }
+    }
+}"
+Interact with vis,16,131,76.48311666647594,"{
+    ""action"": ""tabdoc:clear-legend-selection"",
+    ""timestamp"": 1410133724.411,
+    ""parameters"": {
+        ""legend-names"": [
+            ""[textscan.41886.512368854200].[avg:DepDelay:qk]""
+        ],
+        ""worksheet"": ""Length of Delays Map"",
+        ""dashboard"": ""Dashboard 3"",
+        ""legend-type"": ""size""
+    }
+}"
+Edit story or dashboard,15,132,76.54536666472752,"{
+    ""action"": ""tabdoc:move-zone"",
+    ""timestamp"": 1410133728.146,
+    ""parameters"": {
+        ""drop-location"": {
+            ""y"": 382,
+            ""x"": 927
+        },
+        ""add-as-floating"": ""true"",
+        ""zone-id"": ""6"",
+        ""grab-location"": {
+            ""y"": 380,
+            ""x"": 925
+        }
+    }
+}"
+Edit story or dashboard,15,133,76.60361666679383,"{
+    ""action"": ""tabdoc:toggle-freeform-zone"",
+    ""timestamp"": 1410133731.641,
+    ""parameters"": {
+        ""zone-id"": ""7""
+    }
+}"
+Edit story or dashboard,15,134,76.64340000152588,"{
+    ""action"": ""tabdoc:move-zone"",
+    ""timestamp"": 1410133734.028,
+    ""parameters"": {
+        ""drop-location"": {
+            ""y"": 500,
+            ""x"": 913
+        },
+        ""add-as-floating"": ""true"",
+        ""zone-id"": ""7"",
+        ""grab-location"": {
+            ""y"": 165,
+            ""x"": 885
+        }
+    }
+}"
+Interact with vis,16,135,76.7011333346367,"{
+    ""action"": ""tabdoc:select-legend-item"",
+    ""timestamp"": 1410133737.492,
+    ""parameters"": {
+        ""legend-names"": [
+            ""[textscan.41886.512368854200].[avg:DepDelay:qk]""
+        ],
+        ""worksheet"": ""Length of Delays Map"",
+        ""dashboard"": ""Dashboard 3"",
+        ""legend-type"": ""size""
+    }
+}"
+Edit story or dashboard,15,136,76.73461666504542,"{
+    ""action"": ""tabdoc:move-free-form-zone"",
+    ""timestamp"": 1410133739.501,
+    ""parameters"": {
+        ""y"": ""383"",
+        ""h"": ""151"",
+        ""zone-id"": ""6"",
+        ""w"": ""140"",
+        ""x"": ""849""
+    }
+}"
+Edit story or dashboard,15,137,76.79569999774297,"{
+    ""action"": ""tabdoc:move-free-form-zone"",
+    ""timestamp"": 1410133743.166,
+    ""parameters"": {
+        ""y"": ""383"",
+        ""h"": ""119"",
+        ""zone-id"": ""6"",
+        ""w"": ""140"",
+        ""x"": ""849""
+    }
+}"
+Rename sheet,6,138,77.07391666571299,"{
+    ""action"": ""tabdoc:rename-sheet"",
+    ""timestamp"": 1410133759.859,
+    ""parameters"": {
+        ""set-active"": ""false"",
+        ""sheet"": ""Length of Delays Map"",
+        ""new-sheet"": ""Length of Delays""
+    }
+}"
+Rename sheet,6,139,77.29100000063578,"{
+    ""action"": ""tabui:rename-sheet-ui"",
+    ""timestamp"": 1410133772.884
+}"
+Rename sheet,6,140,77.49024999936422,"{
+    ""action"": ""tabdoc:rename-sheet"",
+    ""timestamp"": 1410133784.839,
+    ""parameters"": {
+        ""set-active"": ""false"",
+        ""sheet"": ""Number of Delays Map"",
+        ""new-sheet"": ""Number of Delays""
+    }
+}"
+Rename sheet,6,141,77.57193333307902,"{
+    ""action"": ""tabdoc:rename-sheet"",
+    ""timestamp"": 1410133789.74,
+    ""parameters"": {
+        ""set-active"": ""false"",
+        ""sheet"": ""Dashboard 3"",
+        ""new-sheet"": ""Delay Maps""
+    }
+}"
+Rename sheet,6,142,77.9621000011762,"{
+    ""action"": ""tabdoc:rename-sheet"",
+    ""timestamp"": 1410133813.15,
+    ""parameters"": {
+        ""set-active"": ""false"",
+        ""sheet"": ""Dashboard 1"",
+        ""new-sheet"": ""Delays over Month""
+    }
+}"
+Rename sheet,6,143,78.11643333435059,"{
+    ""action"": ""tabdoc:rename-sheet"",
+    ""timestamp"": 1410133822.41,
+    ""parameters"": {
+        ""set-active"": ""false"",
+        ""sheet"": ""Dashboard 2"",
+        ""new-sheet"": ""Flights Over Month vs. Week""
+    }
+}"
+Rename sheet,6,144,78.28961666822434,"{
+    ""action"": ""tabdoc:rename-sheet"",
+    ""timestamp"": 1410133832.801,
+    ""parameters"": {
+        ""set-active"": ""false"",
+        ""sheet"": ""Flights Over Month vs. Week"",
+        ""new-sheet"": ""Flights over Month vs. Week""
+    }
+}"
+Interact with vis,16,145,78.3996000011762,"{
+    ""action"": ""tabdoc:highlight"",
+    ""timestamp"": 1410133839.4,
+    ""parameters"": {
+        ""brush-legends"": ""false"",
+        ""worksheet"": ""September Flights"",
+        ""target-exclude"": [
+            ""September Dep Delays""
+        ],
+        ""selector"": {},
+        ""dashboard"": ""Delays over Month"",
+        ""target-sheet"": ""Delays over Month"",
+        ""special-fields"": ""all""
+    }
+}"
+Annotate vis,8,146,78.48848333358765,"{
+    ""action"": ""tabui:view-legend"",
+    ""timestamp"": 1410133844.733,
+    ""parameters"": {
+        ""legend-names"": [
+            ""[textscan.41886.512368854200].[:Measure Names]""
+        ],
+        ""legend-type"": ""color""
+    }
+}"
+Edit story or dashboard,15,147,78.48848333358765,"{
+    ""action"": ""tabdoc:show-legend-on-dashboard"",
+    ""timestamp"": 1410133844.733,
+    ""parameters"": {
+        ""zone-param"": ""[textscan.41886.512368854200].[:Measure Names]"",
+        ""show-legend"": ""true"",
+        ""legend-type"": ""color""
+    }
+}"
+Edit story or dashboard,15,148,78.56298333406448,"{
+    ""action"": ""tabdoc:toggle-freeform-zone"",
+    ""timestamp"": 1410133849.203,
+    ""parameters"": {
+        ""zone-id"": ""8""
+    }
+}"
+Edit story or dashboard,15,149,78.64903333187104,"{
+    ""action"": ""tabdoc:move-zone"",
+    ""timestamp"": 1410133854.366,
+    ""parameters"": {
+        ""drop-location"": {
+            ""y"": 373,
+            ""x"": 840
+        },
+        ""add-as-floating"": ""true"",
+        ""zone-id"": ""8"",
+        ""grab-location"": {
+            ""y"": 68,
+            ""x"": 805
+        }
+    }
+}"
+Interact with vis,16,150,78.73111666440964,"{
+    ""action"": ""tabdoc:select-legend-item"",
+    ""timestamp"": 1410133859.291,
+    ""parameters"": {
+        ""legend-names"": [
+            ""[textscan.41886.512368854200].[:Measure Names]""
+        ],
+        ""worksheet"": ""September Dep Delays"",
+        ""dashboard"": ""Delays over Month"",
+        ""legend-type"": ""color""
+    }
+}"
+Edit story or dashboard,15,151,78.7734833319982,"{
+    ""action"": ""tabdoc:toggle-freeform-zone"",
+    ""timestamp"": 1410133861.833,
+    ""parameters"": {
+        ""zone-id"": ""6""
+    }
+}"
+Edit story or dashboard,15,152,78.8683166662852,"{
+    ""action"": ""tabdoc:move-zone"",
+    ""timestamp"": 1410133867.523,
+    ""parameters"": {
+        ""drop-location"": {
+            ""y"": 33,
+            ""x"": 921
+        },
+        ""add-as-floating"": ""true"",
+        ""zone-id"": ""6"",
+        ""grab-location"": {
+            ""y"": 23,
+            ""x"": 807
+        }
+    }
+}"
+Interact with vis,16,153,78.88581666549047,"{
+    ""action"": ""tabdoc:select-legend-item"",
+    ""timestamp"": 1410133868.573,
+    ""parameters"": {
+        ""legend-names"": [
+            ""[textscan.41886.512368854200].[:Measure Names]""
+        ],
+        ""worksheet"": ""September Flights"",
+        ""dashboard"": ""Delays over Month"",
+        ""legend-type"": ""color""
+    }
+}"
+Edit story or dashboard,15,154,78.95994999806086,"{
+    ""action"": ""tabdoc:move-zone"",
+    ""timestamp"": 1410133873.021,
+    ""parameters"": {
+        ""drop-location"": {
+            ""y"": 576,
+            ""x"": 886
+        },
+        ""add-as-floating"": ""true"",
+        ""zone-id"": ""8"",
+        ""grab-location"": {
+            ""y"": 374,
+            ""x"": 850
+        }
+    }
+}"
+Manage or edit data,11,155,84.79709999958673,"{
+    ""action"": ""tabui:view-data"",
+    ""timestamp"": 1410134223.25,
+    ""parameters"": {
+        ""worksheet"": ""Length of Delays"",
+        ""dashboard"": ""Delay Maps""
+    }
+}"
+Manage or edit data,11,156,85.1258666674296,"{
+    ""action"": ""tabui:view-data"",
+    ""timestamp"": 1410134242.976,
+    ""parameters"": {
+        ""worksheet"": ""Length of Delays"",
+        ""dashboard"": ""Delay Maps""
+    }
+}"
+New sheet or dashboard,4,157,91.34231666723888,"{
+    ""action"": ""tabui:new-worksheet-ui"",
+    ""timestamp"": 1410134615.963,
+    ""parameters"": {
+        ""position"": ""9""
+    }
+}"
+Start up or exit app,9,158,93.04878333409627,"{
+    ""action"": ""tabui:exit-application"",
+    ""timestamp"": 1410134718.351
+}"

@@ -1,0 +1,359 @@
+<html>
+
+  <head>
+
+    <link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+
+    <style>
+    .chart {
+      shape-rendering: crispEdges;
+    }
+    .focus text {
+      font: 12px sans-serif;  
+    }
+    .context text {
+      font: 9px sans-serif;   
+    }
+    .axis line, .axis path {
+      stroke: black;
+    }
+    .dot {
+      fill: green;
+      opacity: .3;
+    }
+    .brush .extent {
+      stroke: gray;
+      fill: blue;
+      fill-opacity: .165;
+    }
+    #tooltip .tooltip {
+      white-space: pre;
+      font-family: monospace;
+    }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8" id="chart"></div>
+        <div class="col-md-4" id="tooltip"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      // Types of events to display
+      var events = [
+       { "category": "Start up or exit app" },
+       { "category": "Drag or drop field" },
+       { "category": "Manage or edit data" },
+       { "category": "Create derived field" },
+       { "category": "ShowMe" },
+       { "category": "Interact with vis" },
+       { "category": "Annotate vis" },
+       { "category": "Fix vis appearance" },
+       { "category": "New sheet or dashboard" },
+       { "category": "Rename sheet" },
+       { "category": "Delete sheet" },
+       { "category": "Undo or redo" },
+       { "category": "Copy or paste" },
+       { "category": "Edit story or dashboard" },
+       { "category": "Adjust GUI" },
+       { "category": "Enter presentation mode" },
+       { "category": "Save or export" },
+       { "category": "Unknown" },
+      ];
+
+      var count = 0
+      events = _.map(events, function(d) { 
+        d["idx"] = count;
+        count += 1;
+        return d;
+      });
+
+      var eventsMap = {}
+      _.map(events, function(d) { eventsMap[d.category] = +d.idx });
+
+      var items = []
+        , brush = null
+        , focusTopAxis = null
+        , focusBottomAxis = null
+        , contextTopAxis = null
+        , contextBottomAxis = null;
+      
+      // Tooltip
+      var tooltip = d3.select("#tooltip").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
+      // Visualization margins
+      var margin = {top: 20, right: 15, bottom: 15, left: 150}
+        , width = 600 - margin.left - margin.right
+        , height = 450 - margin.top - margin.bottom
+        , contextHeight = 150
+        , focusHeight = height - contextHeight - 50;
+
+      // Horizontal scales ranges
+      var focusX = d3.scale.linear()
+        .range([0, width]);
+      var contextX = d3.scale.linear()
+        .range([0, width]);
+      
+      // Vertical scales ranges
+      var focusY = d3.scale.linear()
+        .range([0, focusHeight]);
+      var contextY = d3.scale.linear()
+        .range([0, contextHeight]);
+
+      // Chart space
+      var chart = d3.select("#chart")
+        .append("svg")
+        .attr("width", width + margin.right + margin.left)
+        .attr("height", height + margin.top + margin.bottom)
+        .attr("class", "chart");
+
+      // Focus chart space
+      var focus = chart.append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        .attr("width", width)
+        .attr("height", focusHeight)
+        .attr("class", "focus");
+
+      // Context chart space
+      var context = chart.append("g")
+        .attr("transform", "translate(" + margin.left + "," + (focusHeight + 60) + ")")
+        .attr("width", width)
+        .attr("height", contextHeight)
+        .attr("class", "context");
+
+      // Read data
+      d3.csv("session-to-annotate.csv",
+        
+        // Preprocess
+        function(d) { 
+          d.minute = +d.minute;
+          d.idx = +d.idx;
+          d.id = +d.id;
+          return d;
+        },
+
+        // Draw
+        function(error, data) {
+         
+          items = data;
+ 
+          // Horizontal scales domains
+          focusX.domain(d3.extent(data, function(d) { return d.minute; }));
+          contextX.domain(d3.extent(data, function(d) { return d.minute; }));
+
+          // Vertical scales domains
+          focusY.domain(d3.extent(events, function(d) { return d.idx; }));
+          contextY.domain(d3.extent(events, function(d) { return d.idx; }));
+     
+          // Focus chart grid lines
+          focus.append("g").selectAll(".laneLines")
+            .data(events)
+            .enter().append("line")
+            .attr("x1", 0)
+            .attr("y1", function(d) { 
+                return d3.round(focusY(d.idx)); 
+            })
+            .attr("x2", width)
+            .attr("y2", function(d) { 
+              return d3.round(focusY(d.idx)); 
+            })
+            .attr("stroke", "lightgray");
+
+          focus.append("g").selectAll(".laneText")
+            .data(events)
+            .enter().append("text")
+            .text(function(d) { return d.category; })
+            .attr("x", -10)
+            .attr("y", function(d) { return focusY(d.idx); })
+            .attr("dy", "0.5ex")
+            .attr("text-anchor", "end")
+            .attr("class", "laneText");
+            
+          // Context chart grid lines
+          context.append("g").selectAll(".laneLines")
+            .data(events)
+            .enter().append("line")
+            .attr("x1", 0)
+            .attr("y1", function(d) { 
+              return d3.round(contextY(d.idx));
+            })
+            .attr("x2", width)
+            .attr("y2", function(d) { 
+              return d3.round(contextY(d.idx));
+            })
+            .attr("stroke", "lightgray");
+          
+          context.append("g").selectAll(".laneText")
+            .data(events)
+            .enter().append("text")
+            .text(function(d) { return d.category; })
+            .attr("x", -10)
+            .attr("y", function(d) { return contextY(d.idx); })
+            .attr("dy", "0.5ex")
+            .attr("text-anchor", "end")
+            .attr("class", "laneText");
+         
+          // Focus X axes 
+          focusTopAxis = d3.svg.axis()
+            .scale(focusX)
+            .orient("top")
+            .tickSize(6, 0, 0);
+          
+          focus.append("g")
+            .attr("transform", "translate(0,0.5)")
+            .attr("class", "focus axis top")
+            .call(focusTopAxis);
+          
+          focusBottomAxis = d3.svg.axis()
+            .scale(focusX)
+            .orient("bottom")
+            .tickSize(6, 0, 0);
+          
+          focus.append("g")
+            .attr("transform", "translate(0," + focusHeight + ")")
+            .attr("class", "focus axis bottom")
+            .call(focusBottomAxis);
+          
+          // Context X axes
+          contextTopAxis = d3.svg.axis()
+            .scale(contextX)
+            .orient("top")
+            .tickSize(6, 0, 0);
+          
+          context.append("g")
+            .attr("transform", "translate(0,0.5)")
+            .attr("class", "axis top")
+            .call(contextTopAxis);
+          
+          contextBottomAxis = d3.svg.axis()
+            .scale(contextX)
+            .orient("bottom")
+            .tickSize(6, 0, 0);
+          
+          context.append("g")
+            .attr("transform", "translate(0," + contextHeight + ")")
+            .attr("class", "axis bottom")
+            .call(contextBottomAxis);
+
+          // Invisible hit area to move around the selection window
+          context.append("rect")
+            .attr("pointer-events", "painted")
+            .attr("width", width)
+            .attr("height", contextHeight)
+            .attr("visibility", "hidden")
+            .on("mouseup", moveBrush);
+
+          // Selection area
+          brush = d3.svg.brush()
+            .x(contextX)
+            .extent([10, 20])
+            .on("brush", display);
+          
+          context.append("g")
+            .attr("class", "x brush")
+            .call(brush)
+            .selectAll("rect")
+                .attr("y", 1)
+                .attr("height", contextHeight - 1);
+
+          // Event points         
+          context.selectAll(".dot")
+            .data(data, function(d) { return d.id; })
+            .enter().append("circle")
+            .attr("class", "dot")
+            .attr("r", 5)
+            .attr("cx", function(d) { return contextX(d.minute); })
+            .attr("cy", function(d) { 
+                return contextY(eventsMap[d.category]); 
+             })
+            .on("mouseover", function(d) {
+              tooltip.transition()
+                .duration(200)
+                .style("opacity", .9);
+              var text = d["event"];
+              tooltip.html(text);
+             })
+             .on("mouseout", function(d) {
+                 tooltip.transition()
+                   .duration(500)
+                   .style("opacity", 0);
+             });
+             
+             display();
+        }
+      );
+
+      // Display
+      function display() {
+
+        var dots
+          , minExtent = brush.extent()[0]
+          , maxExtent = brush.extent()[1]
+          , visItems = items.filter(function(d) { return d.minute <= maxExtent && d.minute >= minExtent});
+
+        context.select('.brush').call(brush.extent([minExtent, maxExtent]));       
+        focusX.domain([minExtent, maxExtent]);
+
+        // Update the axis
+        focus.select(".focus.axis.top").call(focusTopAxis);
+        focus.select(".focus.axis.bottom").call(focusBottomAxis)
+          .selectAll("text")
+          .attr("dx", 5)
+          .attr("dy", 12);
+        
+        // Update the items
+        dots = focus.selectAll(".dot")
+          .data(visItems, function(d) { return d.id; });
+        dots.attr("cx", function(d) { return focusX(d.minute); })
+          .attr("cy", function(d) { 
+              return focusY(eventsMap[d.category]); 
+           });
+        
+        // Add the new ones
+        dots.enter().append("circle")
+          .attr("class", "dot")
+          .attr("r", 5)
+          .attr("cx", function(d) { return focusX(d.minute); })
+          .attr("cy", function(d) { 
+              return focusY(eventsMap[d.category]); 
+           })
+          .on("mouseover", function(d) {
+            tooltip.transition()
+              .duration(200)
+              .style("opacity", .9);
+            var text = d["event"];
+            tooltip.html(text);
+          })
+          .on("mouseout", function(d) {
+              tooltip.transition()
+                .duration(500)
+                .style("opacity", 0);
+          });
+       
+        // Remove the old ones
+        dots.exit().remove();
+      }
+
+      function moveBrush() {
+        var origin = d3.mouse(this)
+          , point = focusX.invert(origin[0])
+          , halfExtent = (brush.extent()[1] - brush.extent()[0]) / 2
+          , start = point - halfExtent
+          , end = point + halfExtent;
+        brush.extent([start, end]);
+        display();
+      };
+    </script>
+  </body>
+
+</html>
