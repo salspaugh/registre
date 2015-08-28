@@ -16,7 +16,7 @@ User interaction is primarily recorded in "command-pre" events which are written
 #### Navigating
 
 * `datasets/` data given to participants to explore in pilot study
-* `info/` data about the logs
+* `info/` miscellaneous and poorly documented information about the logs
 * `registre/` main Python modules
   * `actions.py` parse Tableau log "command-pre" event parameters 
   * `graph.py` plot registre logs as Markov diagrams
